@@ -1,11 +1,12 @@
 import 'dotenv/config.js'
 import '../../config/database.js'
-import mongoose from 'mongoose'
+
 import { Category } from '../Categories.model.js'
 import { Games } from '../Games.model.js'
 import { User } from '../User.model.js'
 import categories from './categories.js'
 import games from './games.js'
+import mongoose from 'mongoose'
 import users from './users.js'
 
 // Category.insertMany(categories, (error) => {
