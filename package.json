@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www.js",
-    "data": "node ./models/data/games.js"
+    "data": "node ./models/data/data.js"
   },
   "dependencies": {
     "axios": "^1.3.2",

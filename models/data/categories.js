@@ -1,4 +1,4 @@
-[
+const categories = [
     {
         name:"shooter",
         description:"Action genre where the main objective is to shoot and kill enemies, usually with firearms."
@@ -19,4 +19,5 @@
         name:"strategy",
         description:"Real-time strategy video games or RTS (acronym in English for real-time strategy) are strategy video games in which there are no turns but the action takes place continuously in time. Real-time video games are one of the most dynamic strategy subgenres out there."
     }
-] 
+]
+export default categories;

@@ -1,5 +1,5 @@
-
-    export let game1 = {
+const games =[
+    {
         title: "Forge of Empires",
         category: "Strategy",
         description: "A 2D browser-based online strategy game, become the leader and raise your city.",
@@ -10,7 +10,7 @@
         game_url: "https://www.freetogame.com/open/forge-of-empires"    
       }
       
-      export let game2 = {   
+      , {   
         title: "Game Of Thrones Winter Is Coming",
         category: "Strategy",
         description: "A browser-based RTS based on the George R.R. Martin novels and popular HBO series.",
@@ -20,7 +20,7 @@
         developer: "YOOZOO Games ",
         game_url: "https://www.freetogame.com/open/game-of-thrones-winter-is-coming"
     }
-    export let game3 = {
+    , {
         title: "Primordials: Battle of Gods",
         category: "Strategy",
         description: "Build armies and fight for control of the realm in Global Dodo Entertainment’s 1v1 strategy game Primordials: Battle of Gods. ",
@@ -30,7 +30,7 @@
         developer: "Global Dodo Entertainment",
         game_url: "https://www.freetogame.com/open/primordials-battle-of-gods"
     }
-    export let game4 = {
+    , {
         title: "Blood of Steel",
         category: "Strategy",
         description: "Blood of Steel is an online competitive strategy game featuring some of the most well-known figures throughout medieval history. Choose your general – a Crusader, Viking, Ninja or one of those from the Three Kingdoms. Build your kingdom and command armies in epic PvP battles using classic medieval warfare tactics.",
@@ -40,7 +40,7 @@
         developer: "YC Games",
         game_url: "https://www.freetogame.com/open/blood-of-steel"
     }
-    export let game5 = {
+    , {
         title: "Dota Underlords",
         category: "Strategy",
         description: "An auto battler strategy game set in the world of Valve's Dota franchise.",
@@ -50,7 +50,7 @@
         developer: "Valve",            
         game_url: "https://www.freetogame.com/open/dota-underlords"
     }
-    export let game6 = {
+    , {
         title: "Conqueror's Blade",
         category: "Strategy",
         description: "Command your own medieval army in Conqueror's Blade, a war simulator developed by Booming games.",
@@ -60,7 +60,7 @@
         developer: "Booming Games",
         game_url: "https://www.freetogame.com/open/conquerors-blade"
     }
-    export let game7 = {
+    , {
         title: "The Third Age",
         category: "Strategy",
         description: "A browser-based Strategy MMO game focused on story-based PvE gameplay!",
@@ -70,7 +70,7 @@
         developer: "R2 Games",
         game_url: "https://www.freetogame.com/open/the-third-age"
     }
-    export let game8 = {
+    , {
         title: "Legends of Honor",
         category: "Strategy",
         description: "A browser based medieval fantasy 2D MMORTS.",
@@ -80,7 +80,7 @@
         developer: "Goodgame Studios",
         game_url: "https://www.freetogame.com/open/legends-of-honor"
     }
-    export let game9 = {
+    , {
         title: "Dogs of War Online",
         category: "Strategy",
         description: "Based on the famous miniature board game Confrontation!",
@@ -90,7 +90,7 @@
         developer: "Cyanide",
         game_url: "https://www.freetogame.com/open/dogs-war-online"
     }
-    export let game10 = {
+    , {
         title: "Fallout Shelter",
         category: "Strategy",
         description: "A simulation game based on Bethesda Game Studios' popular Fallout franchise. ",
@@ -100,7 +100,7 @@
         developer: "Bethesda Game Studios",           
         game_url: "https://www.freetogame.com/open/fallout-shelter"
     }    
-    export let game11 = {
+    , {
         title: "Omega Strikers",
         category: "Sports",
         description: "A 3v3 socccer-style game with knockouts.",
@@ -115,7 +115,7 @@
         game_url: "https://www.freetogame.com/open/omega-strikers"
     } 
     
-    export let game12 = {
+    , {
         title: "Roller Champions",
         category: "Sports",
         description: "What if you could player roller derby, but in a more organized and less physically dangerous environment?",
@@ -131,7 +131,7 @@
         game_url: "https://www.freetogame.com/open/roller-champions"
     } 
     
-    export let game13 = {
+    , {
         title: "Slapshot: Rebound",
         category: "Sports",
         description: "Do you like hockey? How about physic-based multiplayer, arcade-style sports games with cute graphics? Well, this is the one for you.",
@@ -146,7 +146,7 @@
         game_url: "https://www.freetogame.com/open/slapshot-rebound"
     } 
     
-    export let game14 = {
+    , {
         title: "Rocket League",
         category: "Sports",
         description: "Get your car-soccer gaming on for free with Psyonix’s Rocket League. The popular competitive multi-player game is a popular offering with over 57 million players.",
@@ -161,7 +161,7 @@
         game_url: "https://www.freetogame.com/open/rocket-league"
     } 
     
-    export let game15 = {
+    , {
         title: "PC Futbol Legends",
         category: "Sports",
         description: "An arcade soccer game inspired by cult arcade games from IDC games. ",
@@ -176,7 +176,7 @@
         game_url: "https://www.freetogame.com/open/futbol-legends"
     } 
     
-    export let game16 = {
+    , {
         title: "Fishing Planet",
         category: "Sports",
         description: "realistic online first-person multiplayer fishing simulator! ",
@@ -191,7 +191,7 @@
         game_url: "https://www.freetogame.com/open/fishing-planet"
     } 
     
-    export let game17 = {
+    , {
         title: "Freestyle2: Street Basketball",
         category: "Sports",
         description: "MMO street basketball game. Team up with the best street ballers! ",
@@ -206,7 +206,7 @@
         game_url: "https://www.freetogame.com/open/freestyle2-street-basketball"
     } 
     
-    export let game18 = {
+    , {
         title: "Shot Online",
         category: "Sports",
         description: "Golfing MMO that any golf lover will enjoy to play!",
@@ -221,7 +221,7 @@
         game_url: "https://www.freetogame.com/open/shot-online"
     } 
     
-    export let game19 = {
+    , {
         title: "Fifa 23",
         category: "Sports",
         description: "FIFA 23 is a soccer simulation video games",
@@ -236,7 +236,7 @@
         game_url:"https://www.ea.com/es-es/games/fifa/fifa-23"
     } 
     
-    export let game20 = {
+    , {
         title: "NBA 2K23",
         category: "Sports",
         description: "NBA 2K23 is a simulation game of basketball matches",
@@ -250,7 +250,7 @@
         developer: "Visual Concepts",
         game_url:"https://nba.2k.com/2k23/"
     }
-    export let game21 = {
+    , {
         title: "Diablo Inmortal",
         category: "MMOARPG",
         description: "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
@@ -269,7 +269,7 @@
         game_url: "https://www.freetogame.com/open/diablo-immortal"
     }
     
-    export let game22 = {
+    , {
         title: "Dark Knigth",
         category: "MMOARPG",
         description: "A browser-based fantasy MMOARPG wherein players take on the role of a devil hunter descended from the gods.",
@@ -288,7 +288,7 @@
         game_url: "https://www.freetogame.com/open/dark-knight"
     }
     
-    export let game23 = {
+    , {
         title: "Weapons Of Mythology",
         category: "MMOARPG",
         description: "A 3D play fantasy MMORPG published by IDC/Games. ",
@@ -307,7 +307,7 @@
         game_url: "https://www.freetogame.com/open/weapons-of-mythology"
     }
     
-    export let game24 = {
+    , {
         title: "Jade Gooddess",
         category: "MMOARPG",
         description: "Jade Goddess is a play, browser based MMO inspired by Eastern mythology.",
@@ -326,7 +326,7 @@
         game_url: "https://www.freetogame.com/open/jade-goddess"
     }
     
-    export let game25 = {
+    , {
         title: "Inferna",
         category: "MMOARPG",
         description: "A cross-platform MMO from indie developer and publisher Inferna Limited, designed for players seeking a classic experience.  ",
@@ -345,7 +345,7 @@
         game_url: "https://www.freetogame.com/open/inferna"
     }
     
-    export let game26 = {
+    , {
         title: "Legends of Aria",
         category: "MMOARPG",
         description: "A sandbox MMORPG featuring a skill-based system, content that will appeal to both PvE and PvP players, and a robust housing system.",
@@ -364,7 +364,7 @@
         game_url: "https://www.freetogame.com/open/legends-of-aria"
     }
     
-    export let game27 = {
+    , {
         title: "Stein World",
         category: "MMOARPG",
         description: "browser-based online fantasy role playing game done in an old-school",
@@ -383,7 +383,7 @@
         game_url: "https://www.freetogame.com/open/steinworld"
     }
     
-    export let game28 = {
+    , {
         title: "League of Angels 3",
         category: "MMOARPG",
         description: "A play turn-based strategy browser game developed and published by GTArcade Entertainment Inc.",
@@ -402,7 +402,7 @@
         game_url: "https://www.freetogame.com/open/league-of-angels-3"
     }
     
-    export let game29 = {
+    , {
         title: "Scions of Fate",
         category: "MMOARPG",
         description: "A friendly play MMORPG with easy to pick up controls.",
@@ -421,7 +421,7 @@
         game_url: "https://www.freetogame.com/open/scions-of-fate"
     }
     
-    export let game30 = {
+    , {
         title: "Global Adventures",
         category: "MMOARPG",
         description: " As a newly recruited agent for the Treasure Hunters Association, you must travel the world conquering dungeons, digging up treasure, and taking down bosses with your friends!",
@@ -439,7 +439,7 @@
         developer: "PixelSoft",
         game_url: "https://www.freetogame.com/open/global-adventures"
     }
-    export let game31 = {
+    , {
         title: "overwatch 2",
         category: "shooter",
         description: "a hero-focused first-person team shooter from Blizzard Entertainment.",
@@ -450,7 +450,7 @@
         game_url: "https://www.freetogame.com/open/overwatch-2"
 
     }
-    export let game32 = {
+    , {
         title: "pubg: battlegrounds",
         category: "shooter",
         description: "get into the action in one of the longest running battle royale games PUBG Battlegrounds",
@@ -460,7 +460,7 @@
         developer: "KRAFTON, Inc.",
         game_url: "https://www.freetogame.com/open/pubg"
     }
-    export let game33 = {
+    , {
         title: "Enlisted",
         category: "shooter",
         description: "Get ready to command your own World War II military squad in Gaijin and Darkflow Software’s MMO squad-based shooter Enlisted.",
@@ -470,7 +470,7 @@
         developer: "Darkflow Software",
         game_url: "https://enlisted.net/es/#!/"
     }
-    export let game34 = {
+    , {
         title: "Dark Orbit Reloaded",
         category: "shooter",
         description: "A browser-based 3D space-combat MMO with a massive playerbase!.",
@@ -480,7 +480,7 @@
         developer: "Bigpoint",
         game_url: "https://www.darkorbit.com/"
     }
-    export let game35 = {
+    , {
         title: "Halo Infinite",
         category: "shooter",
         description: "For the first time ever, a free-to-play Halo experience is available in the form of Halo Infinite’s multiplayer.",
@@ -490,7 +490,7 @@
         developer: "343 Industries",
         game_url: "https://www.freetogame.com/open/halo-infinite"
     }
-    export let game36 = {
+    , {
         title: "Crossout",
         category: "shooter",
         description: "A post-apocalyptic MMO vehicle combat game!",
@@ -500,7 +500,7 @@
         developer: "Gaijin",
         game_url: "https://crossout.net/registration?r=SEMLOG_AW3202384615_AD232394646457&gclid=Cj0KCQiA54KfBhCKARIsAJzSrdooZAZqMbDWyluXDxJOWUjHaRPPI_XCDAe4Njh0sdW91tmxYkgnfK4aAsn8EALw_wcB#/"
     }
-    export let game37 = {
+    , {
         title: "World of Warships",
         category: "shooter",
         description: "A 3D play naval action-themed MMO from the creators of World of Tanks!",
@@ -510,7 +510,7 @@
         developer: "Wargaming",
         game_url: "https://www.freetogame.com/open/world-of-warships"
     }
-    export let game38 = {
+    , {
         title: "War Thunder",
         category: "shooter",
         description: "A MMO shooter that puts you in command of hundreds of the finest combat vehicles of World War II.",
@@ -520,7 +520,7 @@
         developer: "Gaijin Entertainment",
         game_url: "https://www.freetogame.com/open/war-thunder"
     }
-    export let game39 = {
+    , {
         title: "World of Tanks",
         category: "shooter",
         description: "If you like blowing up tanks, with a quick and intense game style you will love this game!",
@@ -530,7 +530,7 @@
         developer: "Wargaming",
         game_url: "https://www.freetogame.com/open/world-of-tanks"
     }
-    export let game40 = {
+    , {
         title: "Valorant",
         category: "shooter",
         description: "Test your mettle in Riot Games character-based FPS shooter Valorant.",
@@ -540,7 +540,7 @@
         developer: "Riot games",
         game_url: "https://www.freetogame.com/open/valorant"
     }
-    export let game41 = {
+    , {
     title: "The Legend of Zelda: Breath of the Wild",
     category: "Adventure",
     description: "No kingdom. No memories. After a slumber that has lasted 100 years, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore that vast and mysterious world and recover his memories before Hyrule is lost forever.Armed only with what he finds in his path, Link will embark on an adventure to find answers and obtain the resources he needs to survive.",
@@ -550,7 +550,7 @@
     developer: "Eiji Aonuma",
     game_url:"https://www.nintendo.com/es-mx/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
   }
-  export let game42 = {
+, {
     title: "Hollow Knight",
     category: "Adventure",
     description: "Brave the depths of a forgotten realm.Beneath the decaying city of Petrópolis lies an ancient kingdom in ruins. Many are drawn to life below the surface, searching for riches, glory, or answers to old riddles.Hollow Knight is a classic 2D action adventure set in a vast interconnected world. Explore twisting caverns, ancient cities, and deadly wastelands. Battle corrupted creatures, befriend strange insects, and solve the ancient mysteries that lie at the heart of the realm.",
@@ -560,7 +560,7 @@
     developer: "Team Cherry",
     game_url:"https://store.steampowered.com/app/367520/Hollow_Knight/"
   }
-  export let game43 = {
+, {
     title: "It takes Two",
     category: "Adventure",
     description: "Embark on the adventure of a lifetime in It Takes Two. Invite a friend to join you for free with the Friend Pass* to collaborate on a variety of deliciously groundbreaking challenges.",
@@ -570,7 +570,7 @@
     developer: "Hazelight",
     game_url:"https://store.steampowered.com/app/1426210/It_Takes_Two/"
   }
-  export let game44 = {
+, {
     title: "Tomb Raider",
     category: "Adventure",
     description: "Tomb Raider tells the story of the origin of Lara Croft and her transformation from a young girl to a resilient survivor.",
@@ -580,7 +580,7 @@
     developer: "Crystal Dynamics, Eidos-Montréal, Feral Interactive (Mac), Nixxes",
     game_url:"https://store.steampowered.com/app/203160/Tomb_Raider/"
   }
-  export let game45 = {
+, {
     title: "Ori and The Will of the Wisps",
     category: "Adventure",
     description: "Begin a new journey through a vast and exotic world where you will encounter towering enemies and challenging puzzles on your quest to unravel Ori's fate.",
@@ -590,7 +590,7 @@
     developer: "Moon Studios GmbH",
     game_url:"https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/"
   }
-  export let game46 = {
+, {
     title: "Horizon: Zero Dawn",
     category: "Adventure",
     description: "Experience Aloy's legendary mission to unlock the secrets of a future machine-dominated Earth. Use devastating attacks against your predators and explore a majestic open world in this award-winning action RPG!",
@@ -600,7 +600,7 @@
     developer: "Guerrilla",
     game_url:"https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/"
   }
-  export let game47 = {
+, {
     title: "Spyro the Dragon",
     category: "Adventure",
     description: "The same flames and the same scorching attitude, but improved and in high definition. Spyro returns in Spyro™ Reignited Trilogy! Rekindle the flame with remastered versions of the original games: Spyro™ the Dragon, Spyro™ 2 Ripto's Rage! and Spyro™ Year of the Dragon.",
@@ -610,17 +610,18 @@
     developer: "Toys for Bob, Iron Galaxy",
     game_url:"https://store.steampowered.com/app/996580/Spyro_Reignited_Trilogy/"
   }
-  export let game48 = {
+, {
     title: "Crash Bandicoot",
     category: "Adventure",
     description: "Crash Bandicoot™, your favorite marsupial, is back! Enhanced, entranced and ready to dance with The Trilogy game collection. Now you can enjoy Crash Bandicoot like never before. Twist, jump, smash, face epic challenges and experience the adventures of the three games that started it all: Crash Bandicoot™, Crash Bandicoot™ 2: Cortex Strikes Back and Crash Bandicoot™ 3: Warped. Relive your favorite Crash moments with remastered graphics and get ready to have a ",
     price: "679",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/731490/header.jpg?t=1568841571",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_ca4b4d3b1dfc069e8742388d27cad924a19dc496.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_3fc14acc13ad8c417678215a63845a1974666a43.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_bc0142ce683958a73f7bcaac6563759e086aa543.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_856d1bb1275f246edbf113775278c92a48bc5be4.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_d7e79d1ef007454b15fb7ce95e53dca785cfe16d.1920x1080.jpg?t=1666113934"],
+
     developer: "Vicarious Visions, Iron Galaxy",
     game_url:"https://store.steampowered.com/app/1378990/Crash_Bandicoot_4_Its_About_Time/"
   }
-  export let game49 = {
+, {
     title: "God of War",
     category: "Adventure",
     description: "Kratos has left behind his revenge against the gods of Olympus and now lives as a man in the domains of the Norse gods and monsters. In this cruel and unforgiving world, she must fight to survive... and teach her son to do it too.",
@@ -630,7 +631,7 @@
     developer: "Santa Monica Studio",
     game_url:"https://store.steampowered.com/app/1593500/God_of_War/"
   }
-  export let game50 = {
+, {
     title: "Hades",
     category: "Adventure",
     description: "Challenge the god of the dead and lead a wild escape from the Underworld in this dungeon crawler from the makers of Bastion, Transistor and Pyre.",
@@ -640,6 +641,6 @@
     developer: "Supergiant Games",
     game_url:"https://store.steampowered.com/app/1145360/Hades/"
   }
-
-
+]
+export default games;
 
