@@ -1,10 +1,12 @@
-import express from 'express';
-let router = express.Router();
+import express from 'express'
+import game from './games.route.js'
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+const router = express.Router();
+
+router.get("/", function(req, res, next) {
+  res.send("server ready");
 });
 
+router.use("/game", game )
 
 export default router
