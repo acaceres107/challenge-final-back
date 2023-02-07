@@ -10,11 +10,6 @@ const gamesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    categories_id: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "categories",
-        required: true,
-    },
     description: {
         type: String,
         required: true,
@@ -23,6 +18,11 @@ const gamesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+      image: {
+        type: String,
+        required: true,
+    },
+
     trailer: {
         type: Array,
         required: true,
@@ -35,7 +35,24 @@ const gamesSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
-},
+    so:{
+         type: String,
+         required: false,
+    },
+     procesador:{
+             type: String,
+         required: false,
+     },
+      graphics:{
+         type: String,
+        required: false,
+      },
+      ram:{
+         type: String,
+         required: false,
+      }
+    }
+,
 { timestamps: true }
 )
 export const Games= mongoose.model("games", gamesSchema) 
