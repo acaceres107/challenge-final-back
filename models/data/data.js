@@ -9,12 +9,12 @@ import games from './games.js'
 import mongoose from 'mongoose'
 import users from './users.js'
 
-Category.insertMany(categories, (error) => {
-    if(error) {
-    console.error(error);
-    } else {
-    console.log('Data imported successfully');
-    }})
+// Category.insertMany(categories, (error) => {
+//     if(error) {
+//     console.error(error);
+//     } else {
+//     console.log('Data imported successfully');
+//     }})
 
 Games.insertMany(games, (error) => {
     if(error) {
@@ -23,18 +23,18 @@ Games.insertMany(games, (error) => {
     console.log('Games imported successfully');
     }})
 
-User.insertMany(users, (error) => {
-    if(error) {
-    console.error(error);
-    } else {
-    console.log('Users imported successfully');
-    }})
+// User.insertMany(users, (error) => {
+//     if(error) {
+//     console.error(error);
+//     } else {
+//     console.log('Users imported successfully');
+//     }})
 
 
-    let newGame = async(game) => {
-        let category = await Category.findOne({ name: game.categories_id })
-        game.categories_id = category._id
-        let newGame = await Games.create(game)
-        return newGame._id
-    }
+    // let newGame = async(game) => {
+    //     let category = await Category.findOne({ name: game.categories_id })
+    //     game.categories_id = category._id
+    //     let newGame = await Games.create(game)
+    //     return newGame._id
+    // }
 

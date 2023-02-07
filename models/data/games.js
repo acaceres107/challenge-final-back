@@ -1,4 +1,4 @@
-const games =[
+let games =[
     {
         title: "Forge of Empires",
         category: "Strategy",
@@ -7,9 +7,12 @@ const games =[
         image: "https://images.crazygames.com/games/forge-of-empires/cover-1589012034370.png?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
         trailer: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVeGe4FSoi1Gi-gIqURzOIeHgx7dJJC9FFsg&usqp=CAU","https://images.saymedia-content.com/.image/t_share/MTg4NjQwNzY3NDgzMzI0MTQw/tips-for-quests-on-forge-of-empire.png","https://www.f2p.com/wp-content/uploads/2017/04/Forge-of-Empires-screenshots-review-f2p-8.jpg","https://slowhaus.es/wp-content/uploads/2022/12/S6SAjSIspXU.jpg","https://preview.redd.it/forge-of-empire-my-current-status-i-just-finished-space-age-v0-2i5909o6t2k91.png?auto=webp&s=d562ebd5d2f28b8080d2b70b2d9d524e5effc170"],
         developer: "InnoGames",
-        game_url: "https://www.freetogame.com/open/forge-of-empires"    
-      }
-      
+        game_url: "https://www.freetogame.com/open/forge-of-empires",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "2.3 GHz Dual Core o equivalente." ,
+        graphics: "GeForce GTS 450-class (Intel HD 4000).",
+        ram: "4 GB" 
+    }
       , {   
         title: "Game Of Thrones Winter Is Coming",
         category: "Strategy",
@@ -18,7 +21,11 @@ const games =[
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1105420/capsule_616x353.jpg?t=1667532623",
         trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1105420/ss_5b894f27ae296719be6455835f36199e05c51adf.1920x1080.jpg?t=1667532623","https://cdn.cloudflare.steamstatic.com/steam/apps/1105420/ss_2865cdbf1670dc3cf2652316b52fe2e507c661da.1920x1080.jpg?t=1667532623","https://cdn.cloudflare.steamstatic.com/steam/apps/1105420/ss_2c9a3a45f6fdc74a8ebf8b04a917a41e6c06d7b1.1920x1080.jpg?t=1667532623","https://encdn.ldmnq.com/ldstore/ReWyse-1595473473403.jpg","https://cdn.cloudflare.steamstatic.com/steam/apps/1105420/ss_4587e99b34f1de28e3967428d51445203728c551.1920x1080.jpg?t=1667532623"],
         developer: "YOOZOO Games ",
-        game_url: "https://www.freetogame.com/open/game-of-thrones-winter-is-coming"
+        game_url: "https://www.freetogame.com/open/game-of-thrones-winter-is-coming",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Primordials: Battle of Gods",
@@ -28,7 +35,11 @@ const games =[
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1316870/capsule_616x353.jpg?t=1615322424",
         trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1316870/ss_73954101b8b4ceaf50a001acdd74e968564dfaf4.1920x1080.jpg?t=1615322424","https://cdn.cloudflare.steamstatic.com/steam/apps/1316870/ss_832abbe42edb4fb37e9097cfab8ac4701d24df42.1920x1080.jpg?t=1615322424","https://cdn2.unrealengine.com/armaros-champion-1920x1080-192476201.png?h=720&resize=1&w=1280","https://cdn.cloudflare.steamstatic.com/steam/apps/1316870/ss_f6dc1ac059690ee5661fdaafaa6808ff1852bfa0.1920x1080.jpg?t=1615322424","https://cdn2.unrealengine.com/woodlands-of-trakay-realm-1920x1080-192476251.png?h=720&resize=1&w=1280"],
         developer: "Global Dodo Entertainment",
-        game_url: "https://www.freetogame.com/open/primordials-battle-of-gods"
+        game_url: "https://www.freetogame.com/open/primordials-battle-of-gods",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Blood of Steel",
@@ -38,7 +49,11 @@ const games =[
         image: "https://cdn.akamai.steamstatic.com/steam/apps/567630/capsule_616x353.jpg?t=1669272638",
         trailer: ["https://tecnogaming.com/wp-content/uploads/2019/11/Blood-of-Steel.jpg","https://www.gamingcoffee.com/wp-content/uploads/2020/01/Screenshot_4-4.jpg","https://cdn.akamai.steamstatic.com/steam/apps/567630/ss_56348eaf90db505418594fe723e4c744a8ba3645.1920x1080.jpg?t=1669272638","https://www.gamingcoffee.com/wp-content/uploads/2020/01/BloodofSteel.jpg","https://cdn.nichesites.pikoya.com/mmosquare_com/images/games/28163/gallery/68369.jpg"],
         developer: "YC Games",
-        game_url: "https://www.freetogame.com/open/blood-of-steel"
+        game_url: "https://www.freetogame.com/open/blood-of-steel",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "Dota Underlords",
@@ -48,7 +63,11 @@ const games =[
         image: "https://cdn.akamai.steamstatic.com/steam/apps/1046930/capsule_616x353.jpg?t=1621357797",
         trailer: ["https://www.gamespot.com/a/uploads/original/172/1720905/3640686-desktop%20screenshot%202020.03.02%20-%2012.29.22.74.jpg","https://assets2.rockpapershotgun.com/dotaunderlordsrev2.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/dotaunderlordsrev2.jpg","https://uploads.golmedia.net/uploads/articles/article_media/1537433791598722118gol1.jpg","https://assets.rockpapershotgun.com/images/2020/03/DotaUnderlordsrev5.jpg","http://www.zonammorpg.com/wp-content/uploads/2019/06/dota-underlords.jpg"],
         developer: "Valve",            
-        game_url: "https://www.freetogame.com/open/dota-underlords"
+        game_url: "https://www.freetogame.com/open/dota-underlords",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Conqueror's Blade",
@@ -58,7 +77,11 @@ const games =[
         image: "https://static.prod-my.games/chronos-public-eu-cb-prod/site/news%2F2022%2F11%2F2455%2FNews%20Preview%20%2B%20Frontpage%20Side%20Image%20%281200x587%29.jpg",
         trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/905370/ss_a5dd7eca768d37e3209bd0620b9d5963b05f6ad5.1920x1080.jpg?t=1671100156","https://cdn.cloudflare.steamstatic.com/steam/apps/905370/ss_2bfca27513610afc69d378e0c9890a24a2ff10f7.1920x1080.jpg?t=1671100156","https://cdn.cloudflare.steamstatic.com/steam/apps/905370/ss_c18846c581867479756f57db45bb992ba58c0451.1920x1080.jpg?t=1671100156","https://i0.wp.com/webadictos.com/media/2021/10/conquerors-blade-class-latam.jpg?fit=1512%2C851&ssl=1","https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/33318685/3e550b86c5f2ecea56d65a62b8160d9b037ff7ab.jpg"],
         developer: "Booming Games",
-        game_url: "https://www.freetogame.com/open/conquerors-blade"
+        game_url: "https://www.freetogame.com/open/conquerors-blade",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "The Third Age",
@@ -68,7 +91,11 @@ const games =[
         image:"https://www.onrpg.com/wp-content/uploads/2018/02/The_Third_Age_668x227.jpg",
         trailer: ["https://www.onrpg.com/wp-content/gallery/The-Third-Age/The-Third-Age03.png","https://cdn.mmohuts.com/wp-content/uploads/2018/02/The_Third_Age_604x423.jpg","https://www.onrpg.com/wp-content/gallery/The-Third-Age/The-Third-Age04.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX6qcya7Ap_p8A9By3r6UwYxZ0hMdBUksHBi5EvY2vsBleX0zPWI9NBUQB5dl2NLrZxvI&usqp=CAU","https://cdn.mmohuts.com/wp-content/gallery/The-Third-Age/The-Third-Age05.jpg"],
         developer: "R2 Games",
-        game_url: "https://www.freetogame.com/open/the-third-age"
+        game_url: "https://www.freetogame.com/open/the-third-age",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "2.3 GHz Dual Core o equivalente." ,
+        graphics: "GeForce GTS 450-class (Intel HD 4000).",
+        ram: "4 GB" 
     }
     , {
         title: "Legends of Honor",
@@ -78,7 +105,11 @@ const games =[
         image: "https://s1.mmommorpg.com/media/wide/maxresdefault_rGzOvJC.jpg",
         trailer: ["https://www.mmogames.com/uploads/public/legends_of_honor_burg_666x374_f8b313272f/legends_of_honor_burg_666x374_f8b313272f.jpg","https://mmos.com/wp-content/uploads/2015/09/legends-of-honor-move-fight.jpg","https://i.ytimg.com/vi/jNQN5Eq71Qo/maxresdefault.jpg","https://i.ytimg.com/vi/jNQN5Eq71Qo/maxresdefault.jpg","https://cdn.nichesites.pikoya.com/mmosquare_com/images/games/6066/gallery/16623.jpg"],
         developer: "Goodgame Studios",
-        game_url: "https://www.freetogame.com/open/legends-of-honor"
+        game_url: "https://www.freetogame.com/open/legends-of-honor",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "2.3 GHz Dual Core o equivalente." ,
+        graphics: "GeForce GTS 450-class (Intel HD 4000).",
+        ram: "4 GB" 
     }
     , {
         title: "Dogs of War Online",
@@ -88,7 +119,11 @@ const games =[
         image:"https://cdn.cloudflare.steamstatic.com/steam/apps/219700/capsule_616x353.jpg?t=1592386589",
         trailer:["https://cdn.cloudflare.steamstatic.com/steam/apps/219700/ss_5774e09d68381cf20526130d8d7f7d8e372ed2b1.1920x1080.jpg?t=1592386589","https://cdn.cloudflare.steamstatic.com/steam/apps/219700/ss_03d7c154dbb834809898a862d181c1e8967106f2.1920x1080.jpg?t=1592386589","https://cdn.cloudflare.steamstatic.com/steam/apps/219700/ss_39aec17e6b5f945103f5b0d4d9c78f7e4dc9d171.1920x1080.jpg?t=1592386589","https://cdn.cloudflare.steamstatic.com/steam/apps/219700/ss_9fa326d67c8a3d9f895c55b5418efc90a6bdcd11.1920x1080.jpg?t=1592386589","https://cdn.cloudflare.steamstatic.com/steam/apps/219700/ss_b13189e5365fdbf7852ab99ff525e470d81f688a.1920x1080.jpg?t=1592386589"],
         developer: "Cyanide",
-        game_url: "https://www.freetogame.com/open/dogs-war-online"
+        game_url: "https://www.freetogame.com/open/dogs-war-online",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "Fallout Shelter",
@@ -98,7 +133,11 @@ const games =[
         image:"https://cdn.cloudflare.steamstatic.com/steam/apps/588430/capsule_616x353.jpg?t=1671140220",
         trailer:["https://www.gamereactor.es/media/63/brandnewfallout_3176333b.jpg","https://images.ctfassets.net/rporu91m20dc/59fjO4WVqmP4mYv1WK5J2t/97e128aad626f6d9862f40be42f144d7/fallout-shelter-m.jpg?q=70","https://images.ctfassets.net/rporu91m20dc/6LCUhq1HFyYjEvN6Yj4Ew7/e86ecf621889e9afea153eceea324dfd/level-1-m.jpg?q=70","https://images.ctfassets.net/rporu91m20dc/4w601qbko7b8vkKlKXOLAj/d330a153b62afadd8c1bc66d954e34eb/level-5-m.jpg?q=70","http://i.imgur.com/0GoNnCz.png"],
         developer: "Bethesda Game Studios",           
-        game_url: "https://www.freetogame.com/open/fallout-shelter"
+        game_url: "https://www.freetogame.com/open/fallout-shelter",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }    
     , {
         title: "Omega Strikers",
@@ -112,7 +151,11 @@ const games =[
         "http://dlprivateserver.com/wp-content/uploads/2022/09/Todos-los-personajes-de-Omega-Strikers-de-porteros-a-delanteros.jpg",
         "https://www.mejoress.com/en/wp-content/uploads/OMEGA-STRIKERS-TRAININGS.jpg.webp"],
         developer: "Odyssey Interactive",
-        game_url: "https://www.freetogame.com/open/omega-strikers"
+        game_url: "https://www.freetogame.com/open/omega-strikers",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -128,7 +171,11 @@ const games =[
         "https://cdn.cloudflare.steamstatic.com/steam/apps/2211280/ss_a0e9045d7fbddc5fcbd63a6e1e8b4cf285332e5f.600x338.jpg?t=1671145943"
         ],
         developer: "Ubisoft",
-        game_url: "https://www.freetogame.com/open/roller-champions"
+        game_url: "https://www.freetogame.com/open/roller-champions",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente.",
+        graphics: "NVIDIA GeForce GTX 1060 (6GB) o GTX 970 (4GB) o AMD RX 470 (4GB / 8GB VRAM with Shader Model 5.0 o superior).",
+        ram: "8 GB"
     } 
     
     , {
@@ -143,7 +190,11 @@ const games =[
         "https://cdn.cloudflare.steamstatic.com/steam/apps/1173370/ss_65755d55d2f2dad9b43fae62a817ba1136b8b11f.600x338.jpg?t=1673435613",
         "https://cdn.cloudflare.steamstatic.com/steam/apps/1173370/ss_25215c0f606fc393e7ed47e4573469e7e49d35fb.600x338.jpg?t=1673435613"],
         developer: "Oddshot Games",
-        game_url: "https://www.freetogame.com/open/slapshot-rebound"
+        game_url: "https://www.freetogame.com/open/slapshot-rebound",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -158,7 +209,11 @@ const games =[
         "https://rocketleague.media.zestyio.com/wheeelz.jpg?width=1440&optimize=high",
         "https://3k4812ts.media.zestyio.com/rls_s4_keyart_4k_no-logo.jpg"],
         developer: "Psyonix LLC",
-        game_url: "https://www.freetogame.com/open/rocket-league"
+        game_url: "https://www.freetogame.com/open/rocket-league",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -173,7 +228,11 @@ const games =[
         "https://imag.malavida.com/mvimgbig/download-fs/pc-futbol-legends-27146-5.jpg",
         "https://play-lh.googleusercontent.com/aaDQXvftCC9SLzCUI4ZLsoqpJwfpCeyGkGrXENeSUsCt3tqWTfkkhEs5-qqC_uhcDw"],
         developer: "IDG GAmes",
-        game_url: "https://www.freetogame.com/open/futbol-legends"
+        game_url: "https://www.freetogame.com/open/futbol-legends",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     } 
     
     , {
@@ -188,7 +247,11 @@ const games =[
         "https://cdn.cloudflare.steamstatic.com/steam/apps/380600/ss_93459ee61ac4f36199c4b0840bad38df2dfae9f3.600x338.jpg?t=1673859903",
         "https://cdn.cloudflare.steamstatic.com/steam/apps/380600/ss_86ee59eb45683f912a2763625b0d6eaf5e6e86f3.600x338.jpg?t=1673859903"],
         developer: "Fishing Planet LLC",
-        game_url: "https://www.freetogame.com/open/fishing-planet"
+        game_url: "https://www.freetogame.com/open/fishing-planet",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -203,7 +266,11 @@ const games =[
         "https://cdn.cloudflare.steamstatic.com/steam/apps/339610/ss_5c75b7046c7e932f6cb40eeb49502e3a85d0fba7.600x338.jpg?t=1673432224",
         "https://cdn.cloudflare.steamstatic.com/steam/apps/339610/ss_3c6130a901dd3a374c87f4040c1d87ca84f67dd7.600x338.jpg?t=1673432224"],
         developer: "Joycity",
-        game_url: "https://www.freetogame.com/open/freestyle2-street-basketball"
+        game_url: "https://www.freetogame.com/open/freestyle2-street-basketball",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -218,7 +285,11 @@ const games =[
         "https://static.webzen.com/shotinline/landing/images/new/img_slider4.jpg",
         "https://static.webzen.com/shotinline/landing/images/new/img_slider5.jpg"],
         developer: "OnNet Co. Ltd.",
-        game_url: "https://www.freetogame.com/open/shot-online"
+        game_url: "https://www.freetogame.com/open/shot-online",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     } 
     
     , {
@@ -233,7 +304,11 @@ const games =[
         "https://sm.ign.com/ign_es/screenshot/default/fifa-23-20220926193018_4286.jpg",
         "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/397/305/products/3-wanda_metropolitano11-17574caaa2bfe9e45d16608389671246-640-0.jpg"],
         developer: "EA Sports",
-        game_url:"https://www.ea.com/es-es/games/fifa/fifa-23"
+        game_url:"https://www.ea.com/es-es/games/fifa/fifa-23",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     } 
     
     , {
@@ -248,7 +323,11 @@ const games =[
         "https://cdn.cloudflare.steamstatic.com/steam/apps/1919590/ss_967a6e4318040094313e7c0cd02948fa428032a1.600x338.jpg?t=1673625785",
         "https://cdn.cloudflare.steamstatic.com/steam/apps/1919590/ss_75b82770a268d1bcf98251e18646b823ea14bd08.600x338.jpg?t=1673625785"],
         developer: "Visual Concepts",
-        game_url:"https://nba.2k.com/2k23/"
+        game_url:"https://nba.2k.com/2k23/",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Diablo Inmortal",
@@ -266,7 +345,12 @@ const games =[
         ]
         ,
         developer: "Blizzard Entertainment",
-        game_url: "https://www.freetogame.com/open/diablo-immortal"
+        game_url: "https://www.freetogame.com/open/diablo-immortal",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente.",
+        graphics: "NVIDIA GeForce GTX 1060 (6GB) o GTX 970 (4GB) o AMD RX 470 (4GB / 8GB VRAM with Shader Model 5.0 o superior).",
+        ram: "8 GB"
+    },{
     }
     
     , {
@@ -285,7 +369,11 @@ const games =[
         ]
         ,
         developer: "Opogame",
-        game_url: "https://www.freetogame.com/open/dark-knight"
+        game_url: "https://www.freetogame.com/open/dark-knight",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -304,14 +392,18 @@ const games =[
         ]
         ,
         developer: "Gamemag",
-        game_url: "https://www.freetogame.com/open/weapons-of-mythology"
+        game_url: "https://www.freetogame.com/open/weapons-of-mythology",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     
     , {
         title: "Jade Gooddess",
         category: "MMOARPG",
         description: "Jade Goddess is a play, browser based MMO inspired by Eastern mythology.",
-        price: "24800",
+        price: "2480",
         image: "https://www.freetogame.com/g/472/thumbnail.jpg",
         trailer: 
         [
@@ -323,7 +415,11 @@ const games =[
         ]
         ,
         developer: "101XP",
-        game_url: "https://www.freetogame.com/open/jade-goddess"
+        game_url: "https://www.freetogame.com/open/jade-goddess",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -342,7 +438,12 @@ const games =[
         ]
         ,
         developer: "inferna limited",
-        game_url: "https://www.freetogame.com/open/inferna"
+        game_url: "https://www.freetogame.com/open/inferna",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente.",
+        graphics: "NVIDIA GeForce GTX 1060 (6GB) o GTX 970 (4GB) o AMD RX 470 (4GB / 8GB VRAM with Shader Model 5.0 o superior).",
+        ram: "8 GB"
+    },{
     }
     
     , {
@@ -361,7 +462,11 @@ const games =[
         ]
         ,
         developer: "Citadel Studios Inc",
-        game_url: "https://www.freetogame.com/open/legends-of-aria"
+        game_url: "https://www.freetogame.com/open/legends-of-aria",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -380,7 +485,11 @@ const games =[
         ]
         ,
         developer: "PG5-Studio Ug",
-        game_url: "https://www.freetogame.com/open/steinworld"
+        game_url: "https://www.freetogame.com/open/steinworld",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -399,7 +508,11 @@ const games =[
         ]
         ,
         developer: "GTArcade Entertainment",
-        game_url: "https://www.freetogame.com/open/league-of-angels-3"
+        game_url: "https://www.freetogame.com/open/league-of-angels-3",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -418,7 +531,11 @@ const games =[
         ]
         ,
         developer: "MGAME Corpotaration",
-        game_url: "https://www.freetogame.com/open/scions-of-fate"
+        game_url: "https://www.freetogame.com/open/scions-of-fate",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     
     , {
@@ -437,7 +554,11 @@ const games =[
         ]
         ,
         developer: "PixelSoft",
-        game_url: "https://www.freetogame.com/open/global-adventures"
+        game_url: "https://www.freetogame.com/open/global-adventures",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "overwatch 2",
@@ -447,7 +568,11 @@ const games =[
         image: "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/games/switch/o/overwatch-2-switch/hero",
         trailer: ["https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/dlc/switch-dlc/overwatch-2-dlc/rom-bundle/overwatch-2-watchpoint-pack/screenshot01", "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/dlc/switch-dlc/overwatch-2-dlc/rom-bundle/overwatch-2-watchpoint-pack/screenshot02", "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/dlc/switch-dlc/overwatch-2-dlc/rom-bundle/overwatch-2-watchpoint-pack/screenshot03", "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/dlc/switch-dlc/overwatch-2-dlc/rom-bundle/overwatch-2-watchpoint-pack/screenshot04", "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_800/ncom/es_LA/dlc/switch-dlc/overwatch-2-dlc/rom-bundle/overwatch-2-watchpoint-pack/screenshot05"],
         developer: "Blizzard Entertainment",
-        game_url: "https://www.freetogame.com/open/overwatch-2"
+        game_url: "https://www.freetogame.com/open/overwatch-2",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5 o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
 
     }
     , {
@@ -458,7 +583,11 @@ const games =[
         image: "https://www.tecnogus.com.co/wp-content/uploads/2022/12/unnamed-18.jpg",
         trailer: ["https://cdn.vox-cdn.com/thumbor/9WQcAnHVWqr5YlBxW8niDkDP6CU=/0x0:1920x1920/920x0/filters:focal(0x0:1920x1920):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19603012/222_Karakin_Minimap_1.jpg", "https://cdn.vox-cdn.com/thumbor/djOicgAPIfuDbY1Y7JNvAwrjhVo=/0x0:3600x2025/920x613/filters:focal(774x826:1350x1402):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66106049/xGw7_Y0Q.0.jpeg", "https://na.battlegrounds.pubg.com/wp-content/uploads/sites/3/2023/01/IBR-Header-1168x657.jpg", "https://global.battlegrounds.pubg.com/wp-content/uploads/2023/01/Gameplay-Screenshot-1024x576.jpg", "https://global.battlegrounds.pubg.com/wp-content/uploads/2023/01/Inventory-UI-1024x576.jpg"],
         developer: "KRAFTON, Inc.",
-        game_url: "https://www.freetogame.com/open/pubg"
+        game_url: "https://www.freetogame.com/open/pubg",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Enlisted",
@@ -468,7 +597,11 @@ const games =[
         image: "https://media.vandal.net/m/44479/enlisted-202272811244780_1.jpg",
         trailer: ["https://enlisted.net/i/screens/1.jpg", "https://enlisted.net/i/screens/2.jpg", "https://enlisted.net/i/screens/3.jpg", "https://enlisted.net/i/screens/4.jpg", "https://enlisted.net/i/screens/5.jpg"],
         developer: "Darkflow Software",
-        game_url: "https://enlisted.net/es/#!/"
+        game_url: "https://enlisted.net/es/#!/",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "Dark Orbit Reloaded",
@@ -478,7 +611,11 @@ const games =[
         image: "https://cdn.pacogames.com/images/fb/darkorbit-reloaded.jpg",
         trailer: ["https://darkorbit-22.bpsecure.com/do_img/global/externalHome/assets/screenshots/screen_1.jpg?__cv=694f6e52f1f5f1f7fc2c60d46027b700", "https://darkorbit-22.bpsecure.com/do_img/global/externalHome/assets/screenshots/screen_2.jpg?__cv=380c34478a8b2c870eaa1c01dc869d00", "https://darkorbit-22.bpsecure.com/do_img/global/externalHome/assets/screenshots/screen_3.jpg?__cv=eaa0f8265ceb8b3656609515577a3a00", "https://darkorbit-22.bpsecure.com/do_img/global/externalHome/assets/screenshots/screen_4.jpg?__cv=f14a9db15f7b19f266322c4aa190bf00", "https://darkorbit-22.bpsecure.com/do_img/global/externalHome/assets/screenshots/screen_3.jpg?__cv=eaa0f8265ceb8b3656609515577a3a00"],
         developer: "Bigpoint",
-        game_url: "https://www.darkorbit.com/"
+        game_url: "https://www.darkorbit.com/",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5 o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "Halo Infinite",
@@ -488,7 +625,11 @@ const games =[
         image: "https://assets.xboxservices.com/assets/95/eb/95eb973b-006b-4533-8902-f5a3f8dfd955.jpg?n=Halo-Infinite_GLP-Page-Hero-0_1083x609.jpg",
         trailer: ["https://compass-ssl.xbox.com/assets/a4/51/a451a0e5-d302-4efa-9c4f-0d1424b32b82.jpg?n=115115115115_Background-Top-768_1083x3705.jpg", "https://compass-ssl.xbox.com/assets/a4/51/a451a0e5-d302-4efa-9c4f-0d1424b32b82.jpg?n=115115115115_Background-Top-768_1083x3705.jpg", "https://compass-ssl.xbox.com/assets/a4/51/a451a0e5-d302-4efa-9c4f-0d1424b32b82.jpg?n=115115115115_Background-Top-768_1083x3705.jpg", "https://compass-ssl.xbox.com/assets/a4/51/a451a0e5-d302-4efa-9c4f-0d1424b32b82.jpg?n=115115115115_Background-Top-768_1083x3705.jpg", "https://compass-ssl.xbox.com/assets/a4/51/a451a0e5-d302-4efa-9c4f-0d1424b32b82.jpg?n=115115115115_Background-Top-768_1083x3705.jpg"],
         developer: "343 Industries",
-        game_url: "https://www.freetogame.com/open/halo-infinite"
+        game_url: "https://www.freetogame.com/open/halo-infinite",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+        procesador: "Intel Core i5 o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "Crossout",
@@ -498,7 +639,11 @@ const games =[
         image: "https://cdn.akamai.steamstatic.com/steam/apps/386180/header.jpg?t=1675318737",
         trailer: ["https://cdn.akamai.steamstatic.com/steam/apps/386180/ss_ee535a665ec862c606c79bc25803ae82d4684630.600x338.jpg?t=1675318737", "https://cdn.akamai.steamstatic.com/steam/apps/386180/ss_e6de2e60ebd3e1451cce5754f0d32093a1c8675c.600x338.jpg?t=1675318737", "https://cdn.akamai.steamstatic.com/steam/apps/386180/ss_005e4029eca15eae56ec5ed20270f90b1bf4be37.600x338.jpg?t=1675318737", "https://cdn.akamai.steamstatic.com/steam/apps/386180/ss_4561d070d1e1935323bfb14c29c9115b7787a1d2.600x338.jpg?t=1675318737", "https://cdn.akamai.steamstatic.com/steam/apps/386180/ss_0b669318d42b3a8bdffdd7cdebc4114053380f8a.600x338.jpg?t=1675318737"],
         developer: "Gaijin",
-        game_url: "https://crossout.net/registration?r=SEMLOG_AW3202384615_AD232394646457&gclid=Cj0KCQiA54KfBhCKARIsAJzSrdooZAZqMbDWyluXDxJOWUjHaRPPI_XCDAe4Njh0sdW91tmxYkgnfK4aAsn8EALw_wcB#/"
+        game_url: "https://crossout.net/registration?r=SEMLOG_AW3202384615_AD232394646457&gclid=Cj0KCQiA54KfBhCKARIsAJzSrdooZAZqMbDWyluXDxJOWUjHaRPPI_XCDAe4Njh0sdW91tmxYkgnfK4aAsn8EALw_wcB#/",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "World of Warships",
@@ -508,7 +653,11 @@ const games =[
         image: "https://wows-static-production.wgcdn.co/wowsp/15ae9726/images/wows_social_1.jpg",
         trailer: ["https://wows-wowsp-global.gcdn.co/media/ceph-image/5d284cdc-a0b2-11ed-8096-ac162d70f4e4.jpg", "https://play-lh.googleusercontent.com/P4lXpbxTkvqAxGzWPC9f_IR5cq-tgTHp9bLrywSbWySKFNPvgFDCMYxe_KEodSRujA=w526-h296-rw", "https://wowsblitz.com/wp-content/uploads/sites/135/2018/10/YeahBuoy-77-Enemies-Sunk.jpg", "https://cdn.akamai.steamstatic.com/steam/apps/552990/ss_13192e349cc427dc2fb260528c0626c9b778cf8b.1920x1080.jpg?t=1674730019", "https://muddlemetrics.com/wp-content/uploads/2019/01/554c704ecb700305241918663f9c2ae4.jpg"],
         developer: "Wargaming",
-        game_url: "https://www.freetogame.com/open/world-of-warships"
+        game_url: "https://www.freetogame.com/open/world-of-warships",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
         title: "War Thunder",
@@ -518,7 +667,11 @@ const games =[
         image: "https://upload.wikimedia.org/wikipedia/en/2/25/War_Thunder_PSN_Cover_Art_2015_Playstation_4.png",
         trailer: ["https://static.warthunder.com/upload/image/0_2022/12_December/Winter/news_winter_marathon_2023_541acba182a15d0681a23075aec1029f.jpg", "https://static.warthunder.com/upload/image/!%202020%20NEWS/06%20June/RU%20day/news_june_12_20_com_70546318e1b9494c6551d658b164ab41.jpg", "https://cdn.cloudflare.steamstatic.com/steam/apps/236390/ss_aef518de9c6987834e6302075e712911663669a2.1920x1080.jpg?t=1671733778", "https://cdn.player.one/sites/player.one/files/2022/06/07/p1warthundernapalm.jpg", "https://static.warthunder.com/upload/image/0_2022/6_June/InTheMorning/shot_2022_539476e00c93a2e45d4feba87a04ccc6_06_539476e00c93a2e45d4feba87a04ccc6_03_19_539476e00c93a2e45d4feba87a04ccc6_48_539476e00c93a2e45d4feba87a04ccc6_50_940_539476e00c93a2e45d4feba87a04ccc6.jpg"],
         developer: "Gaijin Entertainment",
-        game_url: "https://www.freetogame.com/open/war-thunder"
+        game_url: "https://www.freetogame.com/open/war-thunder",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "World of Tanks",
@@ -528,7 +681,11 @@ const games =[
         image: "https://worldoftanks.com/static/5.117.1_a28195/wotp_static/img/download_game/frontend/scss/img/sharing.jpg",
         trailer: ["https://play-lh.googleusercontent.com/0BQj0ccasT-xATnPwNwk4hK0HDDHpTevTUI5X6FYgUt-bL2HwQtU3CgyfxiAOPcetr0=w526-h296-rw", "https://miltrucos.com/wp-content/uploads/Como-jugar-World-of-Tanks-Blitz-en-Linux.jpg", "https://i.computer-bild.de/imgs/1/3/6/3/7/4/8/7/Screenshot-1-World-of-Tanks-Blitz-2047x1365-7030449c6af6ccb4.jpg", "https://i.computer-bild.de/imgs/1/3/8/8/6/5/7/1/wotblitz-31a0df40ec870fb3.jpg", "https://play-lh.googleusercontent.com/lRHWWuPGbW0mY0XImrA_ULyIgwpbWVPPJmfeSKTUU33Q95IeRH_6qdQaY0DmmbjJkw=w526-h296-rw"],
         developer: "Wargaming",
-        game_url: "https://www.freetogame.com/open/world-of-tanks"
+        game_url: "https://www.freetogame.com/open/world-of-tanks",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+        graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+        ram: "6 GB" 
     }
     , {
         title: "Valorant",
@@ -538,7 +695,11 @@ const games =[
         image: "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2021/2/23/lw2mnvl4myz7br8okktn/valorant",
         trailer: ["https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/6/9/yteppeh3ruwmbpeogcba/valorant-ascent", "https://i.blogs.es/ca7b3b/valorant/450_1000.webp", "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/6/9/yteppeh3ruwmbpeogcba/valorant-ascent", "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/17/fbkdtkgnl7jyjayrngwc/valorant", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbi6dcHDD3QPaEuq7GPRFFfoOlkYzLr-tuOFmpAvWvovV7EWMQlkidCBIc0hVai43EUb0&usqp=CAU"],
         developer: "Riot games",
-        game_url: "https://www.freetogame.com/open/valorant"
+        game_url: "https://www.freetogame.com/open/valorant",
+        so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+        procesador: "Core i5-4430 / AMD FX-6300." ,
+        graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+        ram:  "8 GB"
     }
     , {
     title: "The Legend of Zelda: Breath of the Wild",
@@ -548,7 +709,11 @@ const games =[
     image: "https://assets.nintendo.com/image/upload/ar_16:9,c_limit,w_656/b_white/f_auto/q_auto/ncom/es_LA/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/hero",
     trailer: ["https://www.zelda.com/breath-of-the-wild/assets/img/features/screen_Shrines.jpg","https://www.zelda.com/breath-of-the-wild/assets/img/features/screen_towers.jpg","https://media.wired.co.uk/photos/606da2736a2b7484dab92f46/16:9/w_2560,h_1440,c_limit/hard-mode-1.jpg","https://assets.reedpopcdn.com/zelda-breath-of-the-wild-cooking-explained-ingredients-list-bonus-effects-and-how-to-cook-with-the-cooking-pot-148890750631.jpg/BROK/resize/1200x1200%3E/format/jpg/quality/70/zelda-breath-of-the-wild-cooking-explained-ingredients-list-bonus-effects-and-how-to-cook-with-the-cooking-pot-148890750631.jpg","https://interfaceingame.com/wp-content/uploads/the-legend-of-zelda-breath-of-the-wild/the-legend-of-zelda-breath-of-the-wild-map.jpg"],
     developer: "Eiji Aonuma",
-    game_url:"https://www.nintendo.com/es-mx/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
+    game_url:"https://www.nintendo.com/es-mx/store/products/the-legend-of-zelda-breath-of-the-wild-switch/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "Hollow Knight",
@@ -558,7 +723,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg?t=1667006028",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.600x338.jpg?t=1667006028","https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.600x338.jpg?t=1667006028","https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.600x338.jpg?t=1667006028","https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_bd76bd88bc5334ee56ae3d5f0d8dec4455e8e3b8.600x338.jpg?t=1667006028","https://cdn.cloudflare.steamstatic.com/steam/apps/367520/ss_33a645903d6dd9beec39f272a3daf57174a6cc26.600x338.jpg?t=1667006028"],
     developer: "Team Cherry",
-    game_url:"https://store.steampowered.com/app/367520/Hollow_Knight/"
+    game_url:"https://store.steampowered.com/app/367520/Hollow_Knight/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "It takes Two",
@@ -568,7 +737,11 @@ const games =[
     image: "https://cdn1.epicgames.com/offer/8ae7b3c0f490471b967ce26cc2f6e0e6/EGS_ItTakesTwo_Hazelight_S1_2560x1440-3ca0f21dd4d9ce4416e2d8e2a2178906_2560x1440-3ca0f21dd4d9ce4416e2d8e2a2178906",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/ss_d7a931229cbf1cc25975bb5860cbde5b9bbc826a.1920x1080.jpg?t=1666121755","https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/ss_6f7b65b8613afbcb2616bff8ed0283d0629b6572.1920x1080.jpg?t=1666121755","https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/ss_fdac523e3ea4d2f32a44449bb8c224857563bd7d.1920x1080.jpg?t=1666121755","https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/ss_a15164ddd357ab3c0b2aff575a6b215b2d91b406.1920x1080.jpg?t=1666121755","https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/ss_6ce2d50261a94284c72164e2d6d3721fe2f00013.1920x1080.jpg?t=1666121755"],
     developer: "Hazelight",
-    game_url:"https://store.steampowered.com/app/1426210/It_Takes_Two/"
+    game_url:"https://store.steampowered.com/app/1426210/It_Takes_Two/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "Tomb Raider",
@@ -578,7 +751,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/203160/header.jpg?t=1675263466",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_65861a8ea2efcb01fca8aa4b1233663bb053ab54.600x338.jpg?t=1675263466","https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_cd920308517efb19c11b44e251af89e40fb412d5.600x338.jpg?t=1675263466","https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_8f34a87469f3a0c73049cbd0469bdff6e3d22713.600x338.jpg?t=1675263466","https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_7d3c4be984498b4374210a3291e5cf266fa6dd32.600x338.jpg?t=1675263466","https://cdn.cloudflare.steamstatic.com/steam/apps/203160/ss_c93f9a97f2fd890f21c829cf8781850484eec7f3.600x338.jpg?t=1675263466"],
     developer: "Crystal Dynamics, Eidos-Montréal, Feral Interactive (Mac), Nixxes",
-    game_url:"https://store.steampowered.com/app/203160/Tomb_Raider/"
+    game_url:"https://store.steampowered.com/app/203160/Tomb_Raider/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente.",
+    graphics: "NVIDIA GeForce GTX 1060 (6GB) o GTX 970 (4GB) o AMD RX 470 (4GB / 8GB VRAM with Shader Model 5.0 o superior).",
+    ram: "8 GB"
   }
 , {
     title: "Ori and The Will of the Wisps",
@@ -588,7 +765,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg?t=1667504225",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/261570/ss_2d8a25f1cd27d054022ddc1ec7b37cdde55a96c8.600x338.jpg?t=1667504148","https://cdn.cloudflare.steamstatic.com/steam/apps/261570/ss_3ed9c721b5ee032f45bbc95d2c2ba0d8bd06269e.600x338.jpg?t=1667504148","https://cdn.cloudflare.steamstatic.com/steam/apps/261570/ss_fa7b7c8cf8ab40f314c9a6c5fab382a7245daef9.600x338.jpg?t=1667504148","https://cdn.cloudflare.steamstatic.com/steam/apps/261570/ss_873b3e4d8f96ea29c91aebe871af5e3915db3fe2.600x338.jpg?t=1667504148","https://cdn.cloudflare.steamstatic.com/steam/apps/261570/ss_664ec024cc880884e66f9ce61fbbf64b3d73edf3.600x338.jpg?t=1667504148"],
     developer: "Moon Studios GmbH",
-    game_url:"https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/"
+    game_url:"https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "Horizon: Zero Dawn",
@@ -598,7 +779,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/header.jpg?t=1667297464",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/ss_15f5759c441e4e5f51e1a8ee333e4ab9df9aa783.600x338.jpg?t=1667297464","https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/ss_f7cf51f1ccd909264f2c5814f328e3f72e7b62bd.600x338.jpg?t=1667297464","https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/ss_9db45aa04e8c8b5043b479f42ed36296bfc3a918.600x338.jpg?t=1667297464","https://1.bp.blogspot.com/-SDZ66YLgKPQ/Xv_5u_BjJlI/AAAAAAAAAlM/A6bZ-0X1N20X9yLOI6nBMPofJr5hvZ_QgCLcBGAsYHQ/s1600/Horizon-Zero-Dawn-2.jpg","https://cdn.cloudflare.steamstatic.com/steam/apps/1151640/ss_d09106060fb7de8bf342c23df18b14debc8a15a3.600x338.jpg?t=1667297464"],
     developer: "Guerrilla",
-    game_url:"https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/"
+    game_url:"https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Core i5-4430 / AMD FX-6300." ,
+    graphics: "GeForce GTX 960 2GB / AMD Radeon R7 370 2GB." ,
+    ram:  "8 GB"
   }
 , {
     title: "Spyro the Dragon",
@@ -608,7 +793,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/996580/header.jpg?t=1588789018",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/996580/ss_bcf2c7104b393806c478e7a324630487970ee829.600x338.jpg?t=1588789018","https://cdn.cloudflare.steamstatic.com/steam/apps/996580/ss_971529dd86fc64c4505e54fabb1847ec47118a5d.600x338.jpg?t=1588789018","https://cdn.cloudflare.steamstatic.com/steam/apps/996580/ss_d3398e9f6afc99bcc471bc85c419fe5cfbd8918f.600x338.jpg?t=1588789018","https://cdn.cloudflare.steamstatic.com/steam/apps/996580/ss_f375e36dd44de5af930d9c398275370811cdb7b4.600x338.jpg?t=1588789018","https://cdn.cloudflare.steamstatic.com/steam/apps/996580/ss_5307e50e4025c44ce562c05752da89206bf9c8cf.600x338.jpg?t=1588789018"],
     developer: "Toys for Bob, Iron Galaxy",
-    game_url:"https://store.steampowered.com/app/996580/Spyro_Reignited_Trilogy/"
+    game_url:"https://store.steampowered.com/app/996580/Spyro_Reignited_Trilogy/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "Crash Bandicoot",
@@ -617,9 +806,12 @@ const games =[
     price: "679",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/731490/header.jpg?t=1568841571",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_ca4b4d3b1dfc069e8742388d27cad924a19dc496.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_3fc14acc13ad8c417678215a63845a1974666a43.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_bc0142ce683958a73f7bcaac6563759e086aa543.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_856d1bb1275f246edbf113775278c92a48bc5be4.1920x1080.jpg?t=1666113934","https://cdn.cloudflare.steamstatic.com/steam/apps/1378990/ss_d7e79d1ef007454b15fb7ce95e53dca785cfe16d.1920x1080.jpg?t=1666113934"],
-
     developer: "Vicarious Visions, Iron Galaxy",
-    game_url:"https://store.steampowered.com/app/1378990/Crash_Bandicoot_4_Its_About_Time/"
+    game_url:"https://store.steampowered.com/app/1378990/Crash_Bandicoot_4_Its_About_Time/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "God of War",
@@ -629,7 +821,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg?t=1650554420",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.1920x1080.jpg?t=1650554420","https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_3670ba72c7e3e9c3c3225547ef2c1053504e62b8.1920x1080.jpg?t=1650554420","https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_0858b868ea51d53f73bd805ba7382f027dd33dca.1920x1080.jpg?t=1650554420","https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_1351cb512d008f7e47fc50b74197f4f8eb6f3419.600x338.jpg?t=1650554420","https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_8db3de5b5d611e50945268848de2889e1ed4ba84.1920x1080.jpg?t=1650554420"],
     developer: "Santa Monica Studio",
-    game_url:"https://store.steampowered.com/app/1593500/God_of_War/"
+    game_url:"https://store.steampowered.com/app/1593500/God_of_War/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit)." ,
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente." ,
+    graphics: "NVIDIA GeForce GTX 660 (2 GB) / Radeon HD 7850 (2 GB)." ,
+    ram: "6 GB" 
   }
 , {
     title: "Hades",
@@ -639,7 +835,11 @@ const games =[
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg?t=1670649855",
     trailer: ["https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.1920x1080.jpg?t=1670649855","https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/ss_71b831acfddfa631e59e57405b347fb04e9ce8d5.1920x1080.jpg?t=1670649855","https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/ss_68300459a8c3daacb2ec687adcdbf4442fcc4f47.1920x1080.jpg?t=1670649855","https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/ss_217b70678a2eea71a974fba1a4cd8baa660581bb.1920x1080.jpg?t=1670649855","https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/ss_8ab7d762b7f91dda99dc3e4d3e8e4470368e2fc8.600x338.jpg?t=1670649855"],
     developer: "Supergiant Games",
-    game_url:"https://store.steampowered.com/app/1145360/Hades/"
+    game_url:"https://store.steampowered.com/app/1145360/Hades/",
+    so: "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit).",
+    procesador: "Intel Core i5-4690k @ 3.5 GHz o AMD Ryzen 5 1600 @ 3.2 GHz o equivalente.",
+    graphics: "NVIDIA GeForce GTX 1060 (6GB) o GTX 970 (4GB) o AMD RX 470 (4GB / 8GB VRAM with Shader Model 5.0 o superior).",
+    ram: "8 GB"
   }
 ]
 export default games;
