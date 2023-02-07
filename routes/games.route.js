@@ -4,6 +4,6 @@ import express from 'express'
 const router = express.Router()
 const { getOneGame } = controllers
 
-router.get("/:_id", getOneGame)
+router.get("/:id", getOneGame)
 
 export default router

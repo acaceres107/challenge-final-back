@@ -4,8 +4,8 @@ const controllers = {
 
     getOneGame:  async (req, res, next) => {
         try {
-            const { _id } = req.params
-            let game = await Games.findById(_id)
+            const { id } = req.params
+            let game = await Games.findById(id)
             if (game) {
                 res.status(200).json({
                     success: true,
