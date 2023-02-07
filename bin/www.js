@@ -1,38 +1,20 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
-
 import app from '../app.js' ;
-import debug from 'debug' 
-const logger = debug('challenge-final-back:server');
+import debug from 'debug'
 import http from 'http';
 
-/**
- * Get port from environment and store in Express.
- */
+const logger = debug('challenge-final-back:server');
 
 let port = normalizePort(process.env.PORT || '8000');
 app.set('port', port);
 
-/**
- * Create HTTP server.
- */
 
 let server = http.createServer(app);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
 
 server.listen(port, () => console.log('server ready on port: ' + port));
 server.on('error', onError);
 server.on('listening', onListening);
 
-/**
- * Normalize a port into a number, string, or false.
- */
 
 function normalizePort(val) {
   let port = parseInt(val, 10);
