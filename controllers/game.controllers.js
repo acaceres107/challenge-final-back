@@ -1,4 +1,5 @@
 import { Games } from '../models/Games.model.js'
+import { read } from 'fs'
 
 const controllers = {
 
@@ -14,12 +15,13 @@ const controllers = {
             } else {
                 res.status(400).json({
                     success: false,
-                response: "game not found",
+                response: "Game not found",
             })
         }
     } catch (error) {
-        console.log(error) 
+        next(error)
     }
+},
+
 }
-}
-export default controllers
+export default controllers 
