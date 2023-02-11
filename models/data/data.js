@@ -9,6 +9,7 @@ import games from './games.js'
 import mongoose from 'mongoose'
 import users from './users.js'
 
+
 // Category.insertMany(categories, (error) => {
 //     if(error) {
 //     console.error(error);
