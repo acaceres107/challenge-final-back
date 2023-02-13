@@ -17,7 +17,7 @@ const { signup, signin, signout, read, signintoken } = controller
 router.post('/signup', accountExistsSignUp, validator(schema), signup)
 router.post('/signin',  accountExistsSignIn,  /* accountHasBeenVerified, */ signin)
 router.post('/token',passport.authenticate('jwt', {session: false}),mustSignIn,signintoken)
-router.put ('/signout',passport.authenticate('jwt', { session:false }), signout)
+router.post ('/signout', passport.authenticate('jwt', { session:false }), signout)
 router.get('/', read)
 
 export default router
