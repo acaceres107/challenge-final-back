@@ -38,7 +38,7 @@ const controller = {
                     { is_online: true },
                     { new: true}
                 )
-                 let token = jwt.sign(
+                let token = jwt.sign(
                     { id: user.id },
                     process.env.KEY_JWT,
                     { expiresIn: 60*60*24 }
@@ -75,7 +75,7 @@ const controller = {
         }
     },
     signout: async (req, res, next) => {
-        const { mail } = req.user
+        const { mail } = req.user 
         try {
             //si tiene éxito debe cambiar online de true a false
             await User.findOneAndUpdate(
