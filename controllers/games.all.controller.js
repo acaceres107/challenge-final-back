@@ -17,7 +17,7 @@ const controller = {
         if(req.query.category){
             queriesToFilter.category = { "$regex": req.query.category, $options: "i" };
         }
-        if (req.query.category){
+        if (req.query.categories){
             queriesToFilter.category = req.query.category.split(",")
         }
         if (req.query.price){
