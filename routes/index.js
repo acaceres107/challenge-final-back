@@ -5,6 +5,7 @@ import users from './users.route.js'
 import cart from './cart.route.js'
 
 import games from "./allgames.route.js"
+//Falta agregar la ruta de mercadopago
 
 
 let router = express.Router();

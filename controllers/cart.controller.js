@@ -9,6 +9,7 @@ const controller = {
   create: async(req, res, next)=> {
     let data = {
       _id : req.body._id
+      
 /*             user_id : req.user._id */
     }
     console.log(data)
