@@ -15,7 +15,7 @@ const controller = {
 			} else {
 				req.body.success = false;
 				req.body.sc = 404;
-				req.body.data = "help";
+				req.body.data = "categories not found";
 				return defaultResponse(req, res);
 			}
 		} catch (error) {

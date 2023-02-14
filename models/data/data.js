@@ -6,7 +6,7 @@ import { Games } from '../Games.model.js'
 import { User } from '../User.model.js'
 import categories from './categories.js'
 import games from './games.js'
-import users from './users.js'
+
 
 // Category.insertMany(categories, (error) => {
 //     if(error) {
