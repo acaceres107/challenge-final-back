@@ -7,15 +7,12 @@ const controller = {
         console.log(req.query)
         let ordering = {}
         let queriesToFilter = {}
-        let pagination = {
+     /*    let pagination = {
             page:1 ,
-            limit: 10 
-        }
+            //limit: 10 
+        } */
         if(req.query.title){
             queriesToFilter.title = { "$regex": req.query.title, $options: "i" };
-        }
-        if(req.query.category){
-            queriesToFilter.category = { "$regex": req.query.category, $options: "i" };
         }
         if (req.query.category){
             queriesToFilter.category = req.query.category.split(",")
@@ -30,10 +27,10 @@ const controller = {
 			pagination.page = req.query.page;
 		}
     try {
-        let all = await Games.find(queriesToFilter).populate("category")
+        let all = await Games.find(queriesToFilter)//.populate("category")
         .sort(ordering)
-        .skip( pagination.page > 0 ? (pagination.page - 1) * pagination.limit : 0)
-        .limit(pagination.limit)
+        //.skip( pagination.page > 0 ? (pagination.page - 1) * pagination.limit : 0)
+        //.limit(pagination.limit)
         if (all) {
             req.body.success = true;
             req.body.sc = 200;
