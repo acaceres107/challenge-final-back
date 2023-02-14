@@ -1,15 +1,14 @@
 import { Games } from "../models/Games.model.js"
 import defaultResponse from "../config/response.js"
 
-
 const controller = {
     read: async (req, res, next) => {
         console.log(req.query)
         let ordering = {}
         let queriesToFilter = {}
         let pagination = {
-            page:1 ,
-            limit: 10 
+            page:1,
+            limit: 10
         }
         if(req.query.title){
             queriesToFilter.title = { "$regex": req.query.title, $options: "i" };
