@@ -1,6 +1,6 @@
 import passport from 'passport'
 import passportJwt from 'passport-jwt'
-import { User } from '../models/User.js'
+import { User } from '../models/User.model.js'
 const { KEY_JWT } = process.env
 
 passport.use(
@@ -19,9 +19,7 @@ passport.use(
                         id: user._id,
                         mail: user.mail,
                         photo: user.photo,
-                        is_admin: user.is_admin,
-                        is_author: user.is_author,
-                        is_company: user.is_company,
+                        is_admin: user.is_admin
                     }
                     return done(null, user)
                 } else {
