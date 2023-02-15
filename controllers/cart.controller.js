@@ -8,15 +8,12 @@ import mongoose from 'mongoose'
 const controller = {
   create: async(req, res, next)=> {
     let data = {
-      _id : req.body._id
-      
-/*             user_id : req.user._id */
-    }
+      game_id : req.body.game_id,
+      user_id: req.user.id
+    } 
     console.log(data)
     try {
-
-        console.log(data)
-        const reactionCart = await Cart.findById(data)
+        const reactionCart = await Cart.findOne(data)
         if(reactionCart){
           await Cart.findOneAndDelete(data)
           req.body.data = "Game eliminated"
@@ -33,8 +30,9 @@ const controller = {
     },
 
       read: async (req, res, next) => {
+        let user = {user_id: req.user.id}
           try {
-              let cart = await Cart.find().populate("_id")
+              let cart = await Cart.find(user).populate("game_id" , "-category -description -trailer -developer -game_url -so -procesador -graphics -ram -video -password -is_admin -is_verified -verify_code -is_online -photo")
                   
               if (cart) {
                   req.body.success = true;

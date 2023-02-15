@@ -2,8 +2,8 @@ import Joi from "joi-oid"
 
 
 const schema = Joi.object({
-  _id: Joi.any().valid().required().messages({
-    "any.required": "The field '_id' is required, please enter it",
+  game_id: Joi.any().valid().required().messages({
+    "any.required": "The field 'game_id' is required, please enter it",
   }),
   /* price: Joi.required() *//* ,S
   quantity: joi.number().integer().min(1).required().messages({

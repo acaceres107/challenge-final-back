@@ -12,8 +12,8 @@ import gameschema from '../schemas/cart.schema.js';
 const {create, read, pay, remove, empty, update} = controller
 
 
-router.post("/", /* passport.authenticate("jwt", { session: false }), */ validator(gameschema), create);
-router.get("/", /* passport.authenticate("jwt", { session: false }), */  read);
+router.post("/",  passport.authenticate("jwt", { session: false }),  validator(gameschema), create);
+router.get("/",  passport.authenticate("jwt", { session: false }),   read);
 /* router.put("/:user_id", update) */
 //router.get("/", /* passport.authenticate("jwt", { session: false }) , */read);
 //router.get("/pay", /* passport.authenticate("jwt", {session: false}), */ pay);
