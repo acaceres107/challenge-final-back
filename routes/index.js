@@ -3,6 +3,7 @@ import categories from './categories.route.js'
 import game from './games.routes.js'
 import users from './users.route.js'
 import cart from './cart.route.js'
+import favorites from './favoritesGames.route.js'
 
 import games from "./allgames.route.js"
 //Falta agregar la ruta de mercadopago
@@ -24,5 +25,7 @@ router.use("/games", games);
 router.use("/games", game) 
 
 router.use('/carts', cart)
+
+router.use('/favorites', favorites)
 
 export default router
