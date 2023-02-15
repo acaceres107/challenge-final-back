@@ -1,7 +1,7 @@
 import defaultResponse from "../config/response.js";
 
 function accountHasBeenVerified(req, res, next) {
-    if (req.body.is_verified) {
+    if (req.user.is_verified) {
         return next()
     }
     req.body.success = false

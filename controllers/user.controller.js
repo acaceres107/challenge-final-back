@@ -3,6 +3,7 @@ import bcryptjs from 'bcryptjs'
 import crypto from 'crypto'
 import defaultResponse from "../config/response.js" 
 import jwt from 'jsonwebtoken'
+import accountVerificationMail from "../config/accountVerfificationMail.js"
 
 const controller = {
 
@@ -12,11 +13,12 @@ const controller = {
             password: req.body.password,
             photo: req.body.photo,
             is_online: false,
-            is_verified: true,
+            is_verified: false,
             verify_code: crypto.randomBytes(10).toString("hex"),
              password: bcryptjs.hashSync(req.body.password, 10),  
         };
         try {
+            await accountVerificationMail(user,res)
             await User.create(user); //crea el usuari
             req.body.success = true;
             req.body.sc = 201; //agrego el codigo de estado
@@ -26,12 +28,27 @@ const controller = {
             next(error)
         }
     },
+    veryfy:  async(req,res,next) => {
+        const  {verify_Code}  = req.params
+          try {
+    
+           const user =  await User.findOneAndUpdate({ "verify_code" : verify_Code },{ is_verified: true })
+        console.log(user)
+    
+            req.body.success = true
+            req.body.sc = 200
+            req.body.data = "User successfully verified!!!"
+            return defaultResponse(req, res);
+        } catch (error) {
+          next(error)
+        }
+      },
 
     signin: async (req, res, next) => {
         let { password } = req.body
         let { user } = req 
         try {
-             const verified =  password
+            const verified = bcryptjs.compareSync(password, user.password) //comparo contraseña
             if (verified) {
                 await User.findOneAndUpdate(
                     { mail: user.mail },
@@ -51,7 +68,7 @@ const controller = {
                 }
                 req.body.success = true
                 req.body.sc = 200
-                req.body.data = { user  ,token  }
+                req.body.data = { user ,token  }
                 return defaultResponse(req,res)
             }
             req.body.success = false
