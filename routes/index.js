@@ -11,7 +11,7 @@ let router = express.Router();
 
 
 router.get("/", function (req, res, next) {
-  res.send("minga server ready");
+  res.send("nebula server ready");
 });
 
 router.use("/categories", categories);
