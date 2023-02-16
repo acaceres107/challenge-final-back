@@ -1,5 +1,4 @@
-import mercadopago from 'mercadopago'
-import { Cart } from '../models/Cart.model.js'
+import { Favorites } from '../models/Favorites.js'
 import { Games } from '../models/Games.model.js'
 import defaultResponse from '../config/response.js'
 import mongoose from 'mongoose'
@@ -13,13 +12,13 @@ const controller = {
     } 
     console.log(data)
     try {
-        const reactionCart = await Cart.findOne(data)
-        if(reactionCart){
-          await Cart.findOneAndDelete(data)
-          req.body.data = "Game eliminated"
+        const favoritesGames = await Favorites.findOne(data)
+        if(favoritesGames){
+          await Favorites.findOneAndDelete(data)
+          req.body.data = "Reaction eliminated"
         }else{
-          await Cart.create(data)
-          req.body.data = "Game added to the cart"
+          await Favorites.create(data)
+          req.body.data = "Reaction added"
         }
         req.body.success = true
         req.body.sc = 200
@@ -32,17 +31,17 @@ const controller = {
       read: async (req, res, next) => {
         let user = {user_id: req.user.id}
           try {
-              let cart = await Cart.find(user).populate("game_id" , "-category -description -trailer -developer -game_url -so -procesador -graphics -ram -video -password -is_admin -is_verified -verify_code -is_online -photo")
+              let favoritesReactions = await Favorites.find(user).populate("game_id" , "-category -description -trailer -developer -game_url -so -procesador -graphics -ram -video -password -is_admin -is_verified -verify_code -is_online")
                   
-              if (cart) {
+              if (favoritesReactions) {
                   req.body.success = true;
                   req.body.sc = 200;
-                  req.body.data = cart;
+                  req.body.data = favoritesReactions;
                   return defaultResponse(req, res);
               } else {
                   req.body.success = false;
                   req.body.sc = 404;
-                  req.body.data = "cart not found";
+                  req.body.data = "favoritesReactions not found";
                   return defaultResponse(req, res);
               }
           } catch (error) {
