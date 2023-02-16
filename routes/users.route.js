@@ -11,14 +11,15 @@ import mustSignIn from '../middlewares/mustSignIn.js'
 
 import controller from '../controllers/user.controller.js'
 
-const { signup, signin, signout, read, signintoken, veryfy } = controller
+const { signup, signin, signout,  read,  signintoken, veryfy, /* read2 */ } = controller
 
+/* router.get("/:id", getOneUser) */
 
 router.post('/signup', accountExistsSignUp, validator(schema), signup)
 router.post('/signin',  accountExistsSignIn, accountHasBeenVerified,  signin)
 router.get("/verify/:verify_Code", veryfy)
 router.post('/token',passport.authenticate('jwt', {session: false}),mustSignIn,signintoken)
 router.post ('/signout', passport.authenticate('jwt', { session:false }), signout)
-router.get('/', read)
-
+/* router.get("/", read2)  */ 
+router.get('/', read) 
 export default router
