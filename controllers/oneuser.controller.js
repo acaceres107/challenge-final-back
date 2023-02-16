@@ -1,22 +1,20 @@
-import { Games } from '../models/Games.model.js'
-import { read } from 'fs'
+import { User } from "../models/User.model.js";
 
 const controllers = {
 
-    getOneGame:  async (req, res, next) => {
+    getOneUser:  async (req, res, next) => {
         try {
             const { id } = req.params
-            console.log({id})
-            let game = await Games.findById(id)
-            if (game) {
+            let oneUser = await User.findById(id)
+            if (oneUser) {
                 res.status(200).json({
                     success: true,
-                    response: game,
+                    response: oneUser,
                 })
             } else {
                 res.status(400).json({
                     success: false,
-                response: "Game not found",
+                response: "User not found",
             })
         }
     } catch (error) {
@@ -26,3 +24,6 @@ const controllers = {
 
 }
 export default controllers 
+
+
+
