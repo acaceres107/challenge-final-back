@@ -1,7 +1,6 @@
 import { Games } from "../models/Games.model.js"
 import defaultResponse from "../config/response.js"
 
-
 const controller = {
     read: async (req, res, next) => {
         console.log(req.query)
@@ -23,8 +22,8 @@ const controller = {
             ordering = {price: req.query.sort}
         }
         if (req.query.page) {
-			pagination.page = req.query.page;
-		}
+            pagination.page = req.query.page;
+        }
     try {
         let all = await Games.find(queriesToFilter)//.populate("category")
         .sort(ordering)
