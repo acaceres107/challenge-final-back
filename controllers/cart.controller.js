@@ -49,6 +49,22 @@ const controller = {
               next(error);
           }
       },
+      destroy: async (req, res, next)=> {
+        let data = {
+          game_id : req.body.game_id,
+          user_id: req.user.id
+        } 
+        console.log(data)
+        try {
+            const reactionCart = await Cart.findOneAndDelete(data)
+              req.body.data = "Game eliminated"
+              req.body.success = true
+              req.body.sc = 200
+              return defaultResponse(req,res)
+          }catch(error){
+            next(error)
+          }
+        },
   
   }
 
