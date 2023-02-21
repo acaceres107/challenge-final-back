@@ -14,6 +14,6 @@ const {create, read, pay, destroy, update} = controller
 
 router.post("/",  passport.authenticate("jwt", { session: false }),  validator(gameschema), create);
 router.get("/",  passport.authenticate("jwt", { session: false }),   read);
-router.delete("/",  passport.authenticate( {session: false}),  destroy)
+router.delete("/:id",  passport.authenticate("jwt", {session: false}),  destroy)
 
 export default router;
