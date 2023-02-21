@@ -11,15 +11,16 @@ const controller = {
       game_id : req.body.game_id,
       user_id: req.user.id
     } 
-    console.log(data)
+    let user = {user_id: req.user.id}
     try {
         const reactionCart = await Cart.findOne(data)
+        let cart = await Cart.find(user).populate("game_id" , "-category -description -trailer -developer -game_url -so -procesador -graphics -ram -video -password -is_admin -is_verified -verify_code -is_online -photo")
         if(reactionCart){
           await Cart.findOneAndDelete(data)
-          req.body.data = "Game eliminated"
+          req.body.data = cart
         }else{
           await Cart.create(data)
-          req.body.data = "Game added to the cart"
+          req.body.data = cart
         }
         req.body.success = true
         req.body.sc = 200
@@ -49,6 +50,22 @@ const controller = {
               next(error);
           }
       },
+      destroy: async (req, res, next)=> {
+        let data = {
+          _id : req.params.id,
+          user_id: req.user.id
+        } 
+        console.log(data)
+        try {
+            const reactionCart = await Cart.findOneAndDelete(data)
+              req.body.data = "Game eliminated"
+              req.body.success = true
+              req.body.sc = 200
+              return defaultResponse(req,res)
+          }catch(error){
+            next(error)
+          }
+        },
   
   }
 

@@ -35,4 +35,4 @@ const controller = {
         return res.status(200).json({ url: mercadopagoResponse.data.init_point, success: true });
     }
 }
-export default controller;
+export default controller; 
