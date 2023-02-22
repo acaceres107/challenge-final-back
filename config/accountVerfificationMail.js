@@ -12,7 +12,7 @@ function accountVerificationMail(req, res) {
         subject: "Confirm your email address",
         text: "Please click the confirmation link",
 
-        html: `<p>Welcome to nebula, please enter the following link to verify your account  <a href="${url}/verify/${req.verify_code}">Go to nebula!</a></p>`,
+        html: `<p>Welcome to nebula, please enter the following link to verify your account  <a href="${url}verify/${req.verify_code}">Go to nebula!</a></p>`,
       };
     try {
         sgMail.send(message);
