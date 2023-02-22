@@ -18,7 +18,7 @@ const order = async(req, res) => {
             unit_price: product.unit_price
         }],
             back_urls: {
-            success: "http://localhost:3000/success-payment",
+            success: "http://localhost:3000/home",
             pending: "http://localhost:3000/",
             failure: "http://localhost:3000/",
       },
