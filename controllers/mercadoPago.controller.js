@@ -1,38 +1,35 @@
 import axios from "axios";
+import mercadopago from "mercadopago";
 
-import { Games } from "../models/Games.model.js";
+const order = async(req, res) => {
+    let url = "https://api.mercadopago.com/checkout/preferences"
 
-const controller = {
-    order:async (req, res) => {
-        const items = req.body
-        const products = []
-        for (const item of items) {
-            const product = await Games.findById(item._id);
-            products.push({
-                title: product.title,
-                quantity: 1,
-                currency_id: "ARS", 
-                unit_price: parseInt(product.price),
-                id: item._id
-            })
-        }
-
-        const payload = {
-            items: products,
+    const response =await axios.get(url, req.body, {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
+    })
+    const product = req.body
+    console.log(product);
+    const preference = {
+        items: [{
+            title: "Nebula Games",
+            quantity: 1,
+            currency_id: "ARS",
+            unit_price: product.unit_price
+        }],
             back_urls: {
-                success: "http://localhost:3000/success-payment",
-                pending: "http://localhost:3000/",
-                failure: "http://localhost:3000/",
-          },
-            auto_return: "approved",
-        }
-        const mercadopagoResponse = await axios.post('https://api.mercadopago.com/checkout/preferences', payload, {
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
-            }
-        });
-        return res.status(200).json({ url: mercadopagoResponse.data.init_point, success: true });
+            success: "http://localhost:3000/home",
+            pending: "http://localhost:3000/",
+            failure: "http://localhost:3000/",
+      },
+      auto_return: "approved",
     }
+    const mercadopagoResponse = await axios.post('https://api.mercadopago.com/checkout/preferences', preference, {
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env.ACCESS_TOKEN}`
+        }
+    });
+    return res.status(200).json({ url: mercadopagoResponse.data.init_point, success: true });
 }
-export default controller; 
+export default order;
