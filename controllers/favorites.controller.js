@@ -10,15 +10,17 @@ const controller = {
       game_id : req.body.game_id,
       user_id: req.user.id
     } 
+    let user = {user_id: req.user.id}
     console.log(data)
     try {
         const favoritesGames = await Favorites.findOne(data)
+        let fav = await Favorites.find(user).populate("game_id" , "-category -description -trailer -developer -game_url -so -procesador -graphics -ram -video -password -is_admin -is_verified -verify_code -is_online -photo")
         if(favoritesGames){
           await Favorites.findOneAndDelete(data)
-          req.body.data = "Reaction eliminated"
+          req.body.data = fav
         }else{
           await Favorites.create(data)
-          req.body.data = "Reaction added"
+          req.body.data = fav
         }
         req.body.success = true
         req.body.sc = 200
@@ -27,6 +29,7 @@ const controller = {
         next(error)
       }
     },
+
 
       read: async (req, res, next) => {
         let user = {user_id: req.user.id}
@@ -48,7 +51,23 @@ const controller = {
               next(error);
           }
       },
+      destroy: async (req, res, next)=> {
+        let data = {
+          _id : req.params.id,
+          user_id: req.user.id
+        } 
+        console.log(data)
+        try {
+            const reactionFav = await Favorites.findOneAndDelete(data)
+              req.body.data = "Reaction eliminated"
+              req.body.success = true
+              req.body.sc = 200
+              return defaultResponse(req,res)
+          }catch(error){
+            next(error)
+          }
+        },
   
   }
 
-export default controller;;
+export default controller;
